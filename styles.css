@@ -142,7 +142,9 @@
 @media(max-width:1024px){
   html{overflow-x:clip;overflow-y:auto}
   body{overflow:visible}
-  .projects-topbar{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.92)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+  .projects-topbar{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.8)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);isolation:isolate}
+  .projects-topbar>*{position:relative;z-index:2}
+  .projects-topbar::after{content:"";position:absolute;z-index:1;top:100%;left:0;right:0;height:76px;background:linear-gradient(to bottom,rgba(248,250,252,.8) 0%,rgba(248,250,252,.58) 28%,rgba(248,250,252,.25) 62%,rgba(248,250,252,0) 100%);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);pointer-events:none}
 }
 
 /* Glass fade under the sticky project header so cards pass behind it smoothly. */
