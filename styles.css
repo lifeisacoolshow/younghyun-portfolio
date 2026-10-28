@@ -140,6 +140,8 @@
 
 /* Keep the project title and category tabs in view on tablet and mobile. */
 @media(max-width:1024px){
+  html{overflow-x:clip;overflow-y:auto}
+  body{overflow:visible}
   .projects-topbar{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.92)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 }
 
