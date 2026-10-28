@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir -p site
           cp *.html *.css *.js site/
-          unzip -q images.zip -d site/
+          for archive in images-*.zip; do unzip -q "$archive" -d site/; done
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
