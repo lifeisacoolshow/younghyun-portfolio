@@ -138,6 +138,10 @@
 @keyframes confetti-burst{0%{opacity:0;transform:translate(-50%,-50%) scale(.2) rotate(0)}12%{opacity:1}72%{opacity:.85}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) scale(1) rotate(var(--spin))}}
 @media(prefers-reduced-motion:reduce){.profile-confetti{animation:none!important;opacity:0!important}}
 
+/* Keep the project title and category tabs in view on tablet and mobile. */
+@media(max-width:1024px){
+  .projects-topbar{position:sticky;top:0;z-index:20;background:rgba(248,250,252,.92)!important;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+}
 
 /* Glass fade under the sticky project header so cards pass behind it smoothly. */
 @media(min-width:1025px){
