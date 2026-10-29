@@ -1,10 +1,10 @@
 const projects = [
-  { id: 'picl', filter: 'uiux', category: '모바일 앱', platform: 'MOBILE', date: '2026.01 - 2026.02', title: 'PICL 신규기획', image: 'images/projects/picl/01-cover.webp', description: '사진 보정을 즐거운 소셜 콘텐츠로 확장하는 단체사진 동시보정 서비스입니다.', href: 'picl.html' },
-  { id: 'compose', filter: 'uiux', category: '모바일 앱', platform: 'MOBILE', date: '2026.03', title: 'COMPOSE 앱 리디자인', image: 'images/projects/compose/01-cover.webp', description: '반복 주문 사용자를 위한 퀵오더 중심의 모바일 UX 개선 프로젝트입니다.', href: 'compose.html' },
-  { id: 'groundseesaw', filter: 'uiux', category: '반응형 웹', platform: 'WEB / MOBILE', date: '2026.05', title: '그라운드시소 반응형 웹 리디자인', image: 'images/projects/groundseesaw/01-cover.webp', description: '전시 정보를 직관적으로 탐색하고 예약까지 이어지는 웹·모바일 경험을 설계했습니다.', href: 'groundseesaw.html' },
-  { id: 'runon', filter: 'dev', category: '웹 개발', platform: 'WEB', date: '09.19 - 10.28', title: 'RUNON 마라톤 플랫폼', image: 'images/projects/runon/runon-01.jpg', description: '클라우드 기반 Open API로 러닝 크루와 마라톤 정보를 연결하는 웹 플랫폼입니다.', href: 'runon.html' },
-  { id: 'dandi', filter: 'dev', category: '웹 개발', platform: 'WEB', date: '2024.08.29 - 09.07', title: 'DANDI 부산 축제·맛집 웹사이트', image: 'images/projects/dandi/dandi-01.jpg', description: '공공데이터와 오픈 API로 부산 축제와 맛집 정보를 소개하는 웹사이트입니다.', href: 'dandi.html' },
-  { id: 'goodal-ai', filter: 'ai', category: 'AI 콘텐츠 디자인', platform: 'MIDJOURNEY · PHOTOSHOP', date: '430PX BASE', title: '구달 비타C 청귤 알파 크림', image: 'images/projects/goodal-ai/01-cover.jpg', description: '미드저니와 포토샵으로 제작한 청귤 비타C 제품의 세로형 프로모션 콘텐츠입니다.', href: 'goodal-ai.html' },
+  { id: 'picl', filter: 'uiux', category: 'UIUX', platform: 'MOBILE', date: '2026.01 - 2026.02', title: 'PICL 신규기획', image: 'images/projects/picl/01-cover.webp', description: '사진 보정을 즐거운 소셜 콘텐츠로 확장하는 단체사진 동시보정 서비스입니다.', href: 'picl.html' },
+  { id: 'compose', filter: 'uiux', category: 'UIUX', platform: 'MOBILE', date: '2026.03', title: 'COMPOSE 앱 리디자인', image: 'images/projects/compose/01-cover.webp', description: '반복 주문 사용자를 위한 퀵오더 중심의 모바일 UX 개선 프로젝트입니다.', href: 'compose.html' },
+  { id: 'groundseesaw', filter: 'uiux', category: 'UIUX', platform: 'WEB / MOBILE', date: '2026.05', title: '그라운드시소 반응형 웹 리디자인', image: 'images/projects/groundseesaw/01-cover.webp', description: '전시 정보를 직관적으로 탐색하고 예약까지 이어지는 웹·모바일 경험을 설계했습니다.', href: 'groundseesaw.html' },
+  { id: 'runon', filter: 'dev', category: 'DEV', platform: 'WEB', date: '09.19 - 10.28', title: 'RUNON 마라톤 플랫폼', image: 'images/projects/runon/runon-01.jpg', description: '클라우드 기반 Open API로 러닝 크루와 마라톤 정보를 연결하는 웹 플랫폼입니다.', href: 'runon.html' },
+  { id: 'dandi', filter: 'dev', category: 'DEV', platform: 'WEB', date: '2024.08.29 - 09.07', title: 'DANDI 부산 축제·맛집 웹사이트', image: 'images/projects/dandi/dandi-01.jpg', description: '공공데이터와 오픈 API로 부산 축제와 맛집 정보를 소개하는 웹사이트입니다.', href: 'dandi.html' },
+  { id: 'goodal-ai', filter: 'ai', category: 'AI', platform: 'MIDJOURNEY · PHOTOSHOP', date: '430PX BASE', title: '구달 비타C 청귤 알파 크림', image: 'images/projects/goodal-ai/01-cover.jpg', description: '미드저니와 포토샵으로 제작한 청귤 비타C 제품의 세로형 프로모션 콘텐츠입니다.', href: 'goodal-ai.html' },
 ];
 
 const stage = document.querySelector('#portfolio-stage');
