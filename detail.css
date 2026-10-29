@@ -160,3 +160,4 @@ body.goodal-ai-page .goodal-artwork img{display:block;width:100%;height:auto}
 }
 body.goodal-ai-page .goodal-artwork-panel{background:#151515;scrollbar-color:#555 #151515}
 @media(max-width:850px){body.goodal-ai-page .goodal-artwork-panel{background:#151515}}
+body.case-study-page:not(.compose-page) .case-kicker{letter-spacing:.07em}

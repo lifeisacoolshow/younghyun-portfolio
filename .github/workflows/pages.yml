@@ -33,8 +33,13 @@ jobs:
           mkdir -p site
           cp *.html *.css *.js site/
           for archive in images-*.zip; do unzip -q "$archive" -d site/; done
+          if [ -d images ]; then cp -R images/. site/images/; fi
           if compgen -G 'portfolio-pdf-*.part' > /dev/null; then
             cat portfolio-pdf-*.part > site/uxui_younghyun_portfolio.pdf
+          elif [ -f younghyun-portfolio.pdf ]; then
+            cp younghyun-portfolio.pdf site/uxui_younghyun_portfolio.pdf
+          elif [ -f uxui_younghyun_portfolio.pdf ]; then
+            cp uxui_younghyun_portfolio.pdf site/uxui_younghyun_portfolio.pdf
           fi
 
       - name: Upload Pages artifact

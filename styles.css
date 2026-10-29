@@ -194,16 +194,15 @@
   .custom-cursor.is-light.is-arrow::after,.custom-cursor.is-accent.is-arrow::after{color:#111}
 }
 
-.profile-heading h2 .profile-filter-trigger{display:block;padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;text-align:left;white-space:nowrap;cursor:pointer;transition:color .18s,opacity .18s}
+.profile-heading h2 .profile-filter-trigger{display:block;padding:0;border:0;background:none;color:inherit;font:inherit;font-weight:inherit;line-height:inherit;letter-spacing:inherit;text-align:left;white-space:normal;cursor:pointer;transition:color .18s,opacity .18s}
 .profile-heading h2 .profile-filter-trigger:hover,.profile-heading h2 .profile-filter-trigger:focus-visible{color:#b9ff80;outline:none}
 .profile-heading h2 .profile-filter-trigger:focus-visible{ text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
 
 .projects-reset{padding:0;border:0;background:none;color:inherit;font:inherit;letter-spacing:inherit;cursor:pointer}
+@media(max-width:760px){.intro h1>span:first-child,.profile-heading h2 .profile-filter-trigger[data-filter-target="uiux"],.profile-heading h2 .profile-filter-trigger[data-filter-target="dev"],.project-panel .heading-group h1,.project-panel .projects-reset{-webkit-text-stroke:.45px currentColor;font-weight:900!important}.intro h1>span:first-child{-webkit-text-stroke:.35px currentColor}}
 .projects-reset:hover,.projects-reset:focus-visible{color:#555}
 .projects-reset:focus-visible{outline:2px solid #30343a;outline-offset:4px;border-radius:2px}
 
 .project-empty{grid-column:1/-1;min-height:220px;margin:0;display:grid;place-items:center;border:1px solid #dedede;border-radius:16px;color:#777;font-size:14px}
-.profile-heading h2 .profile-filter-trigger:not(:last-child)::after{content:"·";display:block;color:#b9ff80;font-size:.58em;line-height:.55;margin-top:.08em;margin-bottom:.08em}
+.profile-heading h2 .profile-filter-trigger + .profile-filter-trigger{margin-top:.12em}
 #project-goodal-ai .project-image{object-position:center center}
-
-@media(max-width:760px){.intro h1>span:first-child,.profile-heading h2 .profile-filter-trigger[data-filter-target="uiux"],.profile-heading h2 .profile-filter-trigger[data-filter-target="dev"],.project-panel .heading-group h1,.project-panel .projects-reset{-webkit-text-stroke:.45px currentColor;font-weight:900!important}.intro h1>span:first-child{-webkit-text-stroke:.35px currentColor}}
