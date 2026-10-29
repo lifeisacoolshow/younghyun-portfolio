@@ -33,6 +33,9 @@ jobs:
           mkdir -p site
           cp *.html *.css *.js site/
           for archive in images-*.zip; do unzip -q "$archive" -d site/; done
+          if compgen -G 'portfolio-pdf-*.part' > /dev/null; then
+            cat portfolio-pdf-*.part > site/younghyun-portfolio.pdf
+          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
