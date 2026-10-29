@@ -205,3 +205,5 @@
 .project-empty{grid-column:1/-1;min-height:220px;margin:0;display:grid;place-items:center;border:1px solid #dedede;border-radius:16px;color:#777;font-size:14px}
 .profile-heading h2 .profile-filter-trigger:not(:last-child)::after{content:"·";display:block;color:#b9ff80;font-size:.58em;line-height:.55;margin-top:.08em;margin-bottom:.08em}
 #project-goodal-ai .project-image{object-position:center center}
+
+@media(max-width:760px){.intro h1>span:first-child,.profile-heading h2,.project-panel .heading-group h1,.project-panel .projects-reset{-webkit-text-stroke:.45px currentColor;font-weight:900!important}.intro h1>span:first-child{-webkit-text-stroke:.35px currentColor}}
